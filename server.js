@@ -4,8 +4,7 @@ const session = require('express-session');
 const exphbs = require('express-handlebars');
 const routes = require('./controllers');
 const helpers = require('./utils/helpers');
-const sequelize = require("./config/connection");
-const { response } = require('express');
+const sequelize = require('./config/connection');
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
 
 console.log('PID: ', process.pid);
@@ -29,7 +28,7 @@ const sessions = {
   }),
 };
 
-app.use(sessions(sessions));
+app.use(session(sessions));
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));

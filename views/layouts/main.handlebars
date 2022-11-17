@@ -10,6 +10,33 @@
   <body>
     <header>
         <nav class="navBar">
+            <div class="logo">CYBERlog</div>
+            <ul class="navLinks">
+                <div class="navMenu">
+                    <li class="home"><a href='/'>Home</a></li>
+                    <li class="submitBlog"><a href='/profile'>Blog About It</a></li>
+                    {{#if logged_in}}
+                    <li class="profile"><a href='/profile'>Profile</a></li>
+                    <li class="logOut">Logout</li>
+                    {{else}}
+                    <li class="logIn"><a href='/login'>Log In</a></li>
+                    <li class="createAccount"><a href='/createAccount'>Create Account</a></li>
+                    {{/if}}
+                </div>
+            </ul>
         </nav>
     </header>
+    <main>
+        {{{body}}}
+    </main>
+    <footer>
+        <div class="footerContent">
+            <h1>CYBERlog</h1>
+            <p>CopyRight &copy;2022 <a href='#'>CYBERlog</a></p>
+        </div>
+    </footer>
+    {{#if logged_in}}
+    <script src="/js/logout.js"></script>
+    <script src="/js/login.js"></script>
   </body>
+  </html>

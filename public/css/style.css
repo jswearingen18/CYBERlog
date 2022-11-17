@@ -1,0 +1,5 @@
+.navBar {
+display: flex;
+align-items: center;
+background-color: linear-gradient to right silver, black;
+}
