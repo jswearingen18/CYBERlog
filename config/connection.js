@@ -9,7 +9,7 @@ if (process.env.JAWSDB_URL) {
 sequelize = new Sequelize(
   process.env.DB_NAME,
   process.env.DB_USER,
-  process.env.BD_BD_PWD,
+  process.env.DB_PWD,
   {
     host: 'localhost',
     dialect: 'mysql',

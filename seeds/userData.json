@@ -1,21 +1,25 @@
 [
     {
-        "name": "Jeremiah Swearingen",
+        "userName": "crunkichu",
+        "fullName": "Jeremiah Swearingen",
         "email": "jswearingen18@gmail.com",
         "password": "abcd1234"
     },
     {
-        "name": "Anastasia Swearingen",
+        "userName": "anastasiaS",
+        "fullName": "Anastasia Swearingen",
         "email": "anastasiasmith2013@gmail.com",
         "password": "abcd1234"
     },
     {
-        "name": "Ezekiel Swearingen",
+        "userName": "json",
+        "fullName": "Ezekiel Swearingen",
         "email": "ezekiel2020@gmail.com",
         "password": "abcd1234"
     },
     {
-        "name": "Eliza Swearingen",
+        "userName": "jdaughter",
+        "fullName": "Eliza Swearingen",
         "email": "eliza2022@gmail.com",
         "password": "abcd1234"
     }
