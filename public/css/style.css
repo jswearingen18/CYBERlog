@@ -1,5 +1,18 @@
+* {
+    margin: 0px;
+}
 .navBar {
 display: flex;
 align-items: center;
-background-color: linear-gradient to right silver, black;
+justify-content: space-between;
+background: linear-gradient(to right, blue, purple,grey, black);
+padding: 10px;
+color: white;
+}
+.logo {
+    font-size: 50px;
+}
+a {
+    color: white;
+    font-size: 20px;
 }
