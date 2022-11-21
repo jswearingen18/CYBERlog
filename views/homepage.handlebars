@@ -1,0 +1,14 @@
+<div class="cards">
+    {{#each blogs as |blog|}}
+    <div class="card">
+        <div class="card-container">
+            <h2 class="blogTitle">{{title}}</h2>
+            <p>{{blogs}}</p>
+        </div>
+        <p class="card-description">-{{user.fullName}}
+            created this blog on
+            {{format_date date_created}}
+        </p>
+    </div>
+    {{/each}}
+</div>
