@@ -1,0 +1,32 @@
+<div class='profileName'>
+  <h1>Hello, {{fullName}}</h1>
+</div>
+<div class='cards'>
+  {{#each blogs as |blog|}}
+    <div class='card'>
+      <div class='card-container'>
+        <p>{{blogs}}</p>
+      </div>
+    </div>
+  {{/each}}
+</div>
+
+<div id='blogs'>
+  <h1 class='blogsHead'>Submit a New Blog:</h1>
+
+  <form class='blogsPage'>
+    <div class='blogContainer'>
+      <label for='blogs'><b>Blog Post:</b></label>
+      <input
+        id='blogPost'
+        type='text'
+        placeholder='Blog about it!'
+        name='blogs'
+        required
+      />
+      <button class='blogBtn' id='submitBlog' type='submit'>Blog About It!</button>
+    </div>
+  </form>
+</div>
+
+<script src='/js/profile.js'></script>

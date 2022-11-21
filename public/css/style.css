@@ -13,21 +13,47 @@ a {
     text-decoration: none;
 }
 
+header {
+    top: 0px;
+    position: sticky;
+}
 footer {
     text-align: center;
     margin-top: 15px;
     background-color: black;
+    margin-top: 15px;
+    padding: 20px;
+    position: sticky;
+    bottom: 0px;
 }
 
 .blogTitle {
     text-align: center;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-weight: 400px;
+}
+
+.blogs {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: large;
+}
+
+.card-description {
+    text-align: right;
 }
 
 .card {
     border: 3px solid;
-    margin: 12px;
+    margin: 15px;
     border-radius: 7px;
     padding: 5px;
+    background-color: black;
+    color: white;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 .navBar {
@@ -49,10 +75,9 @@ footer {
 }
 
 .logo {
-    font-size: 50px;
+    font-size: 60px;
     text-align: center;
     padding-top: 30px;
-
 }
 
 .logo,
@@ -67,8 +92,82 @@ footer {
 
 }
 
-a {
+.navMenu {
+    display: flex;
+    justify-content: right;
+}
+
+li {
+    margin: 10px;
+}
+
+.navBTN {
+    font-size: 30px;
+}
+
+#login {
+    text-align: center;
+    border: 7px solid;
+    background-color: black;
     color: white;
+    margin: 200px;
+    height: 400px;
+    padding-top: 200px;
+    border-color: var(--purple);
+    border-radius: 7px;
+    margin-left: 600px;
+    margin-right: 600px;
+    font-size: 30px;
+}
+
+#userEmail {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 7px;
+    border: 3px solid var(--purple);
+    font-size: 30px;
+}
+
+#userPassword {
+    margin-bottom: 50px;
+    border-radius: 7px;
+    border: 3px solid var(--purple);
+    font-size: 30px;
+}
+
+#fullName-signUp {
+    border-radius: 7px;
+    border: 3px solid var(--purple);
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#email-signUp {
+    border-radius: 7px;
+    border: 3px solid var(--purple);
+    font-size: 20px;
+    margin-bottom: 20px;
+
+}
+
+#pwd-signUp {
+    border-radius: 7px;
+    border: 3px solid var(--purple);
+    font-size: 20px;
+    margin-bottom: 20px;
+
+}
+
+.loginBTN {
+    border-radius: 7px;
+    border: 3px solid var(--purple);
+    font-size: 15px;
+}
+
+.loginBtn {
+    border-radius: 7px;
+    border: 3px solid var(--purple);
     font-size: 20px;
 }
 

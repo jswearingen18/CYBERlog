@@ -1,26 +1,22 @@
 [
-    {
-        "userName": "crunkichu",
-        "fullName": "Jeremiah Swearingen",
-        "email": "jswearingen18@gmail.com",
-        "password": "abcd1234"
-    },
-    {
-        "userName": "anastasiaS",
-        "fullName": "Anastasia Swearingen",
-        "email": "anastasiasmith2013@gmail.com",
-        "password": "abcd1234"
-    },
-    {
-        "userName": "json",
-        "fullName": "Ezekiel Swearingen",
-        "email": "ezekiel2020@gmail.com",
-        "password": "abcd1234"
-    },
-    {
-        "userName": "jdaughter",
-        "fullName": "Eliza Swearingen",
-        "email": "eliza2022@gmail.com",
-        "password": "abcd1234"
-    }
+  {
+    "fullName": "Jeremiah Swearingen",
+    "email": "jswearingen18@gmail.com",
+    "password": "abcd1234"
+  },
+  {
+    "fullName": "Anastasia Swearingen",
+    "email": "anastasiasmith2013@gmail.com",
+    "password": "abcd1234"
+  },
+  {
+    "fullName": "Ezekiel Swearingen",
+    "email": "ezekiel2020@gmail.com",
+    "password": "abcd1234"
+  },
+  {
+    "fullName": "Eliza Swearingen",
+    "email": "eliza2022@gmail.com",
+    "password": "abcd1234"
+  }
 ]

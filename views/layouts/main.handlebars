@@ -1,55 +1,65 @@
 <html lang='en'>
 
-<head>
+  <head>
     <meta charset='utf-8' />
     <meta name='viewport' content='width=device-width, initial-scale=1.0' />
     <title>CYBERlog</title>
     <link rel='stylesheet' type='text/css' href='/css/style.css' />
-    <script src="https://kit.fontawesome.com/f03e09604d.js" crossorigin="anonymous"></script>
-</head>
+    <script
+      src='https://kit.fontawesome.com/f03e09604d.js'
+      crossorigin='anonymous'
+    ></script>
+  </head>
 
-<body>
+  <body>
     <header>
-        <nav class="navBar">
-            <div class="navContent">
-                <div>
-                    <p class="logo">CYBERlog
-                        <span class="microchip">
-                            <i class="fa-solid fa-microchip"></i>
-                        </span>
-                    </p>
-                </div>
-                <div>
-                    <ul class="navLinks">
-                        <div class="navMenu">
-                            <li class="home"><a href='/'>Home</a></li>
-                            <li class="submitBlog"><a href='/profile'>Blog About It</a></li>
-                            {{#if logged_in}}
-                            <li class="profile"><a href='/profile'>Profile</a></li>
-                            <li class="logOut">Logout</li>
-                            {{else}}
-                            <li class="logIn"><a href='/login'>Log In</a></li>
-                            <li class="createAccount"><a href='/createAccount'>Create Account</a></li>
-                            {{/if}}
-                        </div>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+      <nav class='navBar'>
+        <div class='navContent'>
+          <div>
+            <p class='logo'><b>CYBERlog</b>
+              <span class='microchip'>
+                <i class='fa-solid fa-microchip'></i>
+              </span>
+            </p>
+          </div>
+          <div>
+            <ul class='navLinks'>
+              <div class='navMenu'>
+                <li class='home'><a class='navBTN' href='/'>Home</a></li>
+                <li class='submitBlog'><a class='navBTN' href='/profile'>Blog
+                    About It</a></li>
+                {{#if logged_in}}
+                  <li class='profile'><a
+                      class='navBTN'
+                      href='/profile'
+                    >Profile</a></li>
+                  <li class='logOut navBTN'>Logout</li>
+                {{else}}
+                  <li class='logIn'><a class='navBTN' href='/login'>Log In</a></li>
+                  <li class='createAccount'><a
+                      class='navBTN'
+                      href='/createAccount'
+                    >Create Account</a></li>
+                {{/if}}
+              </div>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
     <main>
-        {{{body}}}
+      {{{body}}}
     </main>
     <footer>
-        <div class="footerContent">
-            <h1>CYBERlog</h1>
-            <p>CopyRight &copy;2022 <a href='#'>CYBERlog</a></p>
-        </div>
+      <div class='footerContent'>
+        <h1>CYBERlog</h1>
+        <p>CopyRight &copy;2022 <a href='#'>CYBERlog</a></p>
+      </div>
     </footer>
     {{#if logged_in}}
-    <script src="/js/logout.js"></script>
-    <script src="/js/login.js"></script>
+      <script src='/js/logout.js'></script>
+      <script src='/js/login.js'></script>
     {{/if}}
-</body>
+  </body>
 
 </html>

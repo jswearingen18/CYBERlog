@@ -35,20 +35,20 @@ router.put('/:id', async (req, res) => {
 
 router.delete('/:id', verifyUser, async (req, res) => {
     try {
-        const blogsDelete = await Blogs.destroy({
+        const blogsData = await Blogs.destroy({
             where: {
                 id: req.params.id,
                 user_id: req.session.user_id,
             },
         });
 
-        if (!blogUpdates) {
+        if (!blogsData) {
 
             res.status(404).json({ message: 'No blogs were found with that id!' });
             return;
         }
 
-        res.status(200).json(blogUpdates);
+        res.status(200).json(blogsData);
     } catch (err) {
         res.status(500).json(err);
     }
