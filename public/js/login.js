@@ -1,8 +1,8 @@
 const login = async (event) => {
   event.preventDefault();
 
-  const email = document.querySelector('#userEmail').value;
-  const password = document.querySelector('#userPassword').value;
+  const email = document.querySelector('#userEmail').value.trim();
+  const password = document.querySelector('#userPassword').value.trim();
   if (email && password) {
     const response = await fetch('/api/users/login', {
       method: 'POST',

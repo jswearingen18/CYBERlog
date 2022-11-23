@@ -13,7 +13,6 @@ router.get('/', async (req, res) => {
       ],
       order: [['date_created', 'DESC']],
     });
-
     const blogs = blogData.map((blog) => blog.get({ plain: true }));
 
     res.render('homepage', {
@@ -54,7 +53,7 @@ router.get('/profile', verifyUser, async (req, res) => {
       include: [
         {
           model: Blogs,
-          attributes: ['blogs'],
+          attributes: ['blogs', 'title'],
         },
       ],
     });
@@ -63,6 +62,7 @@ router.get('/profile', verifyUser, async (req, res) => {
 
     res.render('profile', {
       ...user,
+
       logged_in: true,
     });
   } catch (err) {

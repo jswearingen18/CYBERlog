@@ -1,15 +1,15 @@
 const newBlogForm = async (event) => {
   event.preventDefault();
 
-  const blogs = document.querySelector('#blogs').value;
+  const title = document.querySelector('#blogTitle').value.trim();
+  const blogs = document.querySelector('#blogPost').value.trim();
 
-  if (blogs) {
+  if (title && blogs) {
     const response = await fetch('/api/blogs', {
       method: 'POST',
-      body: JSON.stringify({ blogs }),
+      body: JSON.stringify({ title, blogs }),
       headers: {
         'Content-Type': 'application/json',
-        Accept: 'application/json',
       },
     });
 
@@ -21,5 +21,5 @@ const newBlogForm = async (event) => {
   }
 };
 
-document.querySelector('submitBlog');
+document.querySelector('.blogBtn');
 document.addEventListener('submit', newBlogForm);
